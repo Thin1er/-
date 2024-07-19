@@ -9,13 +9,13 @@ for i in numbers:
     else:
         f = i
     for a in range(2, f):
-        if i % a == 0:
+        if f % a == 0:
             is_prime = False
             break
     if not is_prime:
-        not_primes.append(i)
+        not_primes.append(f)
     else:
-        primes.append(i)
+        primes.append(f)
 
 print(primes)
 print(not_primes)
